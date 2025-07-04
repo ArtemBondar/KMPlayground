@@ -1,7 +1,7 @@
 plugins {
-    kotlin("multiplatform") version "1.9.22"
-    id("com.android.application") version "8.2.0"
-    id("org.jetbrains.compose") version "1.6.0"
+    kotlin("multiplatform") version "2.0.0"
+    id("com.android.application") version "8.3.0"
+    id("org.jetbrains.compose") version "1.6.10"
 }
 
 group = "com.example"
@@ -14,6 +14,7 @@ repositories {
 }
 
 kotlin {
+    jvmToolchain(17)
     android()
     iosX64()
     iosArm64()
@@ -36,7 +37,7 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation("androidx.activity:activity-compose:1.8.1")
+                implementation("androidx.activity:activity-compose:1.9.0")
             }
         }
         val iosMain by creating {
@@ -70,7 +71,7 @@ android {
         versionName = "1.0"
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }

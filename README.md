@@ -1,7 +1,8 @@
 # KMPlayground
 
-This is a Kotlin Multiplatform (KMP) template configured for Compose Multiplatform.
-The project targets Android, iOS, Web (JS), Desktop, and Server JVM.
+This project is a Kotlin Multiplatform (KMP) Compose template.
+It uses **Kotlin 2.0** and **Compose Multiplatform 1.6.10** to target
+Android, iOS, Web (JS), Desktop, and a JVM server.
 
 ## Build
 
